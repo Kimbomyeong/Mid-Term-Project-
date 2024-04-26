@@ -20,6 +20,17 @@
   <link rel="stylesheet" href="../resources/css/template.css">
   <link rel="stylesheet" href="../resources/css/common.css">
   <link rel="stylesheet" href="../resources/css/style.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // 소개 링크 클릭 시 About me 섹션으로 스크롤
+        document.querySelector('.header-gnblink').addEventListener('click', function() {
+            const aboutMeSection = document.querySelector('.glamping-N5');
+            if (aboutMeSection) {
+                aboutMeSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
+            }
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -57,28 +68,11 @@
             <a class="header-gnblink" href="javascript:void(0)">
               <span>취미</span>
             </a>
-            <!-- <ul class="header-sublist">
-              <li class="header-subitem">
-                <a class="header-sublink" href="javascript:void(0)">
-                  <span>편의시설</span>
-                </a>
-              </li>
-              <li class="header-subitem">
-                <a class="header-sublink" href="javascript:void(0)">
-                  <span>모닥불/캠프파이어</span>
-                </a>
-              </li>
-              <li class="header-subitem">
-                <a class="header-sublink" href="javascript:void(0)">
-                  <span>액티비티</span>
-                </a>
-              </li>
-              <li class="header-subitem">
-                <a class="header-sublink" href="javascript:void(0)">
-                  <span>템하 이벤트</span>
-                </a>
-              </li>
-            </ul> -->
+          </li>
+          <li class="header-gnbitem">
+            <a class="header-gnblink" href="javascript:void(0)">
+              <span>마인드기록</span>
+            </a>
           </li>
           <li class="header-gnbitem">
             <a class="header-gnblink" href="javascript:void(0)">
@@ -89,12 +83,6 @@
       </div>
       <div class="header-right">
         <div class="header-utils">
-          <!-- <a href="javascript:void(0);" class="btn-user header-utils-btn">
-            <img src="../resources/icons/ico_user_white.svg" alt="유저 아이콘">
-          </a> -->
-          <button class="btn-allmenu header-utils-btn">
-            <img src="../resources/icons/ico_menu_white.svg" alt="PC메뉴">
-          </button>
           <button class="btn-momenu header-utils-btn">
             <img src="../resources/icons/ico_menu_white.svg" alt="모바일메뉴">
           </button>
@@ -103,51 +91,6 @@
           </button>
         </div>
       </div>
-    </div>
-    <div class="header-fullmenu fullmenu-right">
-      <div class="fullmenu-wrapper">
-        <div class="fullmenu-head">
-          <h4 class="fullmenu-title">
-            <a href="javascript:void(0)">
-               BM BOARD<!-- <img src="../resources/images/img_logo_white.png" alt="로고"> -->
-            </a>
-          </h4>
-          <ul class="fullmenu-member">
-            <li>
-              <a href="javascript:void(0)">로그인</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">회원가입</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="fullmenu-gnblist">
-          <li class="fullmenu-gnbitem">
-            <a class="fullmenu-gnblink" href="javascript:void(0)">
-              <span>소개</span>
-            </a>
-            
-          </li>
-          <li class="fullmenu-gnbitem">
-            <a class="fullmenu-gnblink" href="javascript:void(0)">
-              <span>커리어</span>
-            </a>
-          </li>
-          <li class="fullmenu-gnbitem">
-            <a class="fullmenu-gnblink" href="javascript:void(0)">
-              <span>취미</span>
-            </a>
-          </li>
-          <li class="fullmenu-gnbitem">
-            <a class="fullmenu-gnblink" href="javascript:void(0)">
-              <span>연락</span>
-            </a>
-          </li>
-         
-      </div>
-      <button class="fullmenu-close">
-        <img src="../resources/icons/ico_close_white.svg" alt="닫기">
-      </button>
     </div>
   </header>
   <!-- [E]glamping-N1 -->
@@ -165,7 +108,6 @@
                   <h2 class="textset-tit">Welcome to BM BLOG</h2>
                   <p class="textset-desc"> 김보명의 게시판에 온것을 환영합니다. <br> 이곳에서 저에 대해 알아보아요.</p>
                 </div>
-                <!-- <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a> -->
               </div>
             </div>
             <div class="swiper-slide">
@@ -176,7 +118,6 @@
                   <h2 class="textset-tit">Welcome to BM BLOG</h2>
                   <p class="textset-desc"> 김보명의 게시판에 온것을 환영합니다. <br> 이곳에서 저에 대해 알아보아요. </p>
                 </div>
-                <!-- <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a> -->
               </div>
             </div>
             <div class="swiper-slide">
@@ -187,7 +128,6 @@
                   <h2 class="textset-tit">Welcome to BM BLOG</h2>
                   <p class="textset-desc"> 김보명의 게시판에 온것을 환영합니다. <br> 이곳에서 저에 대해 알아보아요. </p>
                 </div>
-                <!-- <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a> -->
               </div>
             </div>
           </div>
@@ -218,7 +158,6 @@
               <div class="cardset-body">
                 <h2 class="cardset-tit">  <br> About me </h2>
                 <p class="cardset-desc"> 저는 2019년 단국대학교 소프트웨어학과에 입학했고 <br> 현재 4학년 재학생으로 내년 졸업을 앞두고 있습니다. </p>
-                <!-- <a href="javascript:void(0);" class="btnset btnset-round btnset-line btnset-black">자세히보기</a> -->
               </div>
             </div>
             <div class="cardset cardset-xl cardset-deco cardset-hor">
@@ -284,7 +223,7 @@
                     </figure>
                     <div class="cardset-body">
                       <h2 class="cardset-tit">군대</h2>
-                      <p class="cardset-desc"> 대테러초동조치, 대테러특수임무 요인경호를 수행하는 <br> 군사경찰특임대(sdt)에서 복무했습니다. </p>
+                      <p class="cardset-desc"> 대테러초동조치, 대테러특수임무, 요인경호를 수행하는 <br> 군사경찰특임대(sdt)에서 복무했습니다. </p>
                     </div>
                   </a>
                 </div>
@@ -355,8 +294,8 @@
       <div class="contents-inner">
         <div class="contents-container container-md">
           <div class="textset">
-            <h2 class="textset-tit">템하를 이용한 생생 리뷰</h2>
-            <p class="textset-desc">템하 캠프랜드의 생생 리뷰를 만나보세요.</p>
+            <h2 class="textset-tit">나의 마인드 변화</h2>
+            <p class="textset-desc">20살때부터 마인드 변화 기록</p>
           </div>
           <div class="contents-control">
             <div class="swiper-button-prev"></div>
@@ -373,8 +312,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_1.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 대학교 들어왔으니 실컷 놀아야겠다..!</p>
+                      <p class="cardset-info">20살</p>
                     </div>
                   </div>
                 </div>
@@ -386,8 +325,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_2.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 코로나라서 학교도 못가는데 뭘 해야될지를 모르겠다. </p>
+                      <p class="cardset-info">21살</p>
                     </div>
                   </div>
                 </div>
@@ -399,8 +338,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_3.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 군대생활 열심히 해보자! </p>
+                      <p class="cardset-info">22살</p>
                     </div>
                   </div>
                 </div>
@@ -412,8 +351,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_4.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 군대 전역했으니 복학전까지 놀자 </p>
+                      <p class="cardset-info">23살</p>
                     </div>
                   </div>
                 </div>
@@ -425,8 +364,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_5.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 이렇게 살면 안된다.. 무언가 변화가 필요하다. 동기를 얻고 진로를 찾아야한다 </p>
+                      <p class="cardset-info">24살</p>
                     </div>
                   </div>
                 </div>
@@ -438,60 +377,8 @@
                       <img class="cardset-img" src="../resources/images/img_profile_1.png" alt="이미지">
                     </figure>
                     <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="contents-slide-group">
-                  <div class="cardset cardset-user">
-                    <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_profile_2.png" alt="이미지">
-                    </figure>
-                    <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="contents-slide-group">
-                  <div class="cardset cardset-user">
-                    <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_profile_3.png" alt="이미지">
-                    </figure>
-                    <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="contents-slide-group">
-                  <div class="cardset cardset-user">
-                    <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_profile_4.png" alt="이미지">
-                    </figure>
-                    <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="contents-slide-group">
-                  <div class="cardset cardset-user">
-                    <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_profile_5.png" alt="이미지">
-                    </figure>
-                    <div class="cardset-profile">
-                      <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
-                      <p class="cardset-info">글램핑 구매자</p>
+                      <p class="cardset-text"> 진로에 대해서 명확히 길을 찾았으니 앞으로 남은 학교생활 1년 최선을 다해서 공부해보자!! </p>
+                      <p class="cardset-info">25살</p>
                     </div>
                   </div>
                 </div>
