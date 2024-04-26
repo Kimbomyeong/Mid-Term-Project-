@@ -29,6 +29,36 @@
                 aboutMeSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
             }
         });
+
+        // 커리어 링크 클릭 시 나의 성인 커리어 섹션으로 스크롤
+        document.querySelector('.header-gnbitem:nth-child(2) .header-gnblink').addEventListener('click', function() {
+            const adultCareerSection = document.querySelector('.glamping-N7');
+            if (adultCareerSection) {
+                adultCareerSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
+            }
+        });
+        document.querySelector('.header-gnbitem:nth-child(3) .header-gnblink').addEventListener('click', function() {
+    const videoSection = document.querySelector('.glamping-N8');
+    if (videoSection) {
+        videoSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
+    }
+});
+document.querySelector('.header-gnbitem:nth-child(4) .header-gnblink').addEventListener('click', function() {
+    const mindChangeSection = document.querySelector('.glamping-N9');
+    if (mindChangeSection) {
+        mindChangeSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
+    }
+});
+
+<!-- 연락 링크 클릭 시 이벤트 처리 -->
+document.querySelector('.header-gnbitem:nth-child(5) .header-gnblink').addEventListener('click', function() {
+    const contactMeSection = document.querySelector('.glamping-N3');
+    if (contactMeSection) {
+        contactMeSection.scrollIntoView({ behavior: 'smooth' }); // 스무스 스크롤링
+    }
+});
+
+        
     });
 </script>
 </head>
@@ -174,23 +204,6 @@
         </div>
       </div>
     </div>
-    <!-- [E]glamping-N5 -->
-    <!-- [S]glamping-N6 -->
-    <!-- <div class="glamping-N6" data-bid="tuLvgBfx76">
-      <div class="contents-inner">
-        <div class="contents-container">
-          <div class="imageset">
-            <img class="imageset-img img-pc" src="../resources/images/img_glamping_N6_1.png" alt="PC 이미지">
-            <img class="imageset-img img-mobile" src="../resources/images/img_glamping_mobile_N6_1.png" alt="모바일 이미지">
-          </div>
-          <div class="cardset cardset-xl cardset-deco">
-            <h2 class="cardset-tit"> 추억쌓기 딱 좋은 템하 캠핑 <br> 마음껏 체험하기 </h2>
-            <p class="cardset-desc"> 우리에게 템하 캠핑이 소중한 추억을 만들어주었습니다. <br> 다시 찾고 싶은 캠핑장입니다. </p>
-            <a href="javascript:void(0);" class="btnset btnset-round btnset-line btnset-white">체험하기</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- [E]glamping-N6 -->
     <!-- [S]glamping-N7 -->
     <div class="glamping-N7" data-bid="OdlvgbfXen">
@@ -398,101 +411,11 @@
       <div class="footer-body container-md">
         <h2 class="footer-logo">
           <a href="javascript:void(0)">
-            <img src="../resources/images/img_logo_white.png" alt="로고">
+            <!-- <img src="../resources/images/img_logo_white.png" alt="로고"> -->
+            CONTACT ME
           </a>
         </h2>
-        <ul class="footer-menulist">
-          <li class="footer-menuitem">
-            <a href="javascript:void(0)">
-              <span>템하소개</span>
-            </a>
-            <ul class="footer-sublist">
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>캠핑스토리</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>캠핑영상</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>오시는길</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer-menuitem">
-            <a href="javascript:void(0)">
-              <span>글램핑안내</span>
-            </a>
-            <ul class="footer-sublist">
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>객실안내</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>주변관광정보</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>서비스안내</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer-menuitem">
-            <a href="javascript:void(0)">
-              <span>템하이벤트</span>
-            </a>
-            <ul class="footer-sublist">
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>템하이벤트</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer-menuitem">
-            <a href="javascript:void(0)">
-              <span>예약하기</span>
-            </a>
-            <ul class="footer-sublist">
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>예약하기</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="footer-menuitem">
-            <a href="javascript:void(0)">
-              <span>커뮤니티</span>
-            </a>
-            <ul class="footer-sublist">
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>공지사항</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>이용문의</span>
-                </a>
-              </li>
-              <li class="footer-subitem">
-                <a href="javascript:void(0)">
-                  <span>갤러리</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        </ul> 
         <ul class="footer-snslist">
           <li class="footer-snsitem">
             <a class="footer-snslink" href="javascript:void(0)">
@@ -510,38 +433,15 @@
             </a>
           </li>
         </ul>
-        <ul class="footer-menugroup">
-          <li class="footer-menulink">
-            <a href="javascript:void(0)">
-              <span>이용약관</span>
-            </a>
-          </li>
-          <li class="footer-menulink">
-            <a href="javascript:void(0)">
-              <span>개인정보처리방침</span>
-            </a>
-          </li>
-          <li class="footer-menulink">
-            <a href="javascript:void(0)">
-              <span>푸터메뉴1</span>
-            </a>
-          </li>
-          <li class="footer-menulink">
-            <a href="javascript:void(0)">
-              <span>푸터메뉴2</span>
-            </a>
-          </li>
-        </ul>
+        
         <div class="footer-txtgroup">
           <div class="footer-txt">
-            <p> 서울시 영등포구 선유로70 우리벤처타운2 705호 </p>
+            <p> 경기도 용인시 수지구</p>
             <p>
-              <span>T. 070-8872-8874</span>
-              <span>E. help@openfield.co.kr</span>
             </p>
           </div>
           <div class="footer-txt">
-            <p>2023 BY TEMPLATEHOUSE. ALL RIGHTS RESEVED</p>
+            <p>Copylight BM 2024</p>
           </div>
         </div>
       </div>
