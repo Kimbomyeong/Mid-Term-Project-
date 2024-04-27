@@ -18,7 +18,6 @@
 .glamping-N1 .header-sublist { display: none; position: absolute; width: 100%; padding: 2.5rem 0; height: 0; }
 .glamping-N1 .header-sublink { width: 100%; padding: 0.6rem 0; font-size: var(--fs-p3); line-height: 2rem; font-weight: 500; text-align: center; color: #d4d4d8; }
 .glamping-N1 .header-sublink:hover { color: var(--text-color5); }
-.glamping-N1 .header-right { display: flex; align-items: center; }
 .glamping-N1 .header-utils { display: flex; align-items: center; }
 .glamping-N1 .header-utils .header-utils-btn { width: 3.2rem; height: 3.2rem; border: transparent; background-color: transparent; background-position: center; background-size: cover; }
 .glamping-N1 .header-utils .header-utils-btn+.header-utils-btn { margin-left: 2.4rem; }
